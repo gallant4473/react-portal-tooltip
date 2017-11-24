@@ -276,7 +276,7 @@ class Card extends React.Component {
     let {style, arrowStyle} = this.checkWindowPosition(this.getGlobalStyle(), this.getArrowStyle())
 
     return (
-      <div id={this.props.id ? this.props.id : ''} style={style} onMouseEnter={::this.handleMouseEnter} onMouseLeave={::this.handleMouseLeave}>
+      <div className={this.props.className ? this.props.className : ''} id={this.props.id ? this.props.id : ''} style={style} onMouseEnter={::this.handleMouseEnter} onMouseLeave={::this.handleMouseLeave}>
         {this.props.arrow ? (
           <div>
             <span style={arrowStyle.fgStyle}/>
